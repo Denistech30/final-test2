@@ -1,0 +1,112 @@
+/* src/style.css */
+
+/* Container for the announcements page */
+.announcements-page-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* List of announcements */
+.announcements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual announcement card */
+.announcement-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.dark-mode .announcement-card {
+  background: #333;
+  color: #f0f0f0;
+}
+.glowing-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 123, 255, 0.3);
+  transition: box-shadow 0.3s ease;
+}
+.glowing-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 123, 255, 0.6);
+}
+
+/* Announcement date */
+.announcement-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 5px;
+}
+.dark-mode .announcement-date {
+  color: #aaa;
+}
+
+/* Announcement text */
+.announcement-text {
+  font-size: 1rem;
+  color: #333;
+}
+.dark-mode .announcement-text {
+  color: #f0f0f0;
+}
+
+/* No announcements message */
+.no-announcements {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+.dark-mode .no-announcements {
+  color: #ccc;
+}
+
+/* Pagination controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-info {
+  font-size: 1rem;
+  color: #333;
+}
+.dark-mode .pagination-info {
+  color: #ccc;
+}
+
+/* Ensure these styles match your existing enhanced-btn */
+.pagination-btn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+/* src/index.css or similar */
+.Toastify__toast {
+  font-family: Arial, sans-serif;
+  border-radius: 4px;
+}
+.Toastify__toast--info {
+  background: #36d7b7;
+}
